@@ -9,9 +9,10 @@
 Run the requirements.txt 
 
 ```
-pip install -r requirements.txt
+cat requirements.txt | xargs -n 1 -L 1 pip install
 ```
 
+Load Dataset
 
 ```
 gtf.Train_Dataset(root_dir="../sample_dataset", coco_dir="kangaroo", img_dir="images", set_dir="Train", batch_size=8, image_size=512, use_gpu=True)
@@ -38,3 +39,5 @@ gtf.Train(num_epochs=2, model_output_dir="trained/")
 ## Acknowledgments
 
 * [MONK_OBJECT_DETECTION](https://github.com/Tessellate-Imaging/Monk_Object_Detection)
+* [DATASET](https://www.primaresearch.org/datasets/Layout_Analysis)
+
