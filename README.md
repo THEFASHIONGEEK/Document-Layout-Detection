@@ -3,6 +3,19 @@
 
 ![Document Layout Detection](Images/Layout_Analysis.png)
 
+This dataset has been created primarily for the evaluation of layout analysis (physical and logical) methods. It contains realistic 
+documents with a wide variety of layouts, reflecting the various challenges in layout analysis.
+
+Dataset has four classes:
+
+* Text Region
+* Seperation Region
+* Noise Region
+* Image Region
+
+### Format of Dataset
+
+![Format of Dataset](Images/VOC.png)
 
 ## Pipeline
 
@@ -11,7 +24,9 @@ Run the requirements.txt
 ```
 cat requirements.txt | xargs -n 1 -L 1 pip install
 ```
+Convert to COCO format
 
+![COCO format](Images/COCO.png)
 
 Load Dataset
 
