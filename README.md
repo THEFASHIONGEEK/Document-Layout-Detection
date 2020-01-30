@@ -58,7 +58,7 @@ os.makedirs(logs_base_dir, exist_ok=True)
 Start the training 
 
 ```
-gtf.Train(num_epochs=2, model_output_dir="trained/")
+gtf.Train(num_epochs=5, model_output_dir="trained/")
 ```
 
 
