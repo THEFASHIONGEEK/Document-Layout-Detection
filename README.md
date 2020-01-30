@@ -55,6 +55,8 @@ os.makedirs(logs_base_dir, exist_ok=True)
 %load_ext tensorboard
 %tensorboard --logdir {logs_base_dir}
 ```
+![PLOTS](Images/PLOTS.PNG)
+
 Start the training 
 
 ```
