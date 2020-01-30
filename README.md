@@ -17,6 +17,11 @@ Dataset has four classes:
 
 ![Format of Dataset](Images/VOC.PNG)
 
+### Prerequisites
+
+* [Python3](https://www.python.org/) - Python version 3.6
+* [CUDA](https://developer.nvidia.com/cuda-90-download-archive) - CUDA version 9.0
+
 ## Pipeline
 
 Run the requirements.txt 
@@ -43,7 +48,13 @@ Set Hyper Parameters
 ```
 gtf.Set_Hyperparams(lr=0.0001, val_interval=1, es_min_delta=0.0, es_patience=0)
 ```
-
+To View Loss Plots (Optional)
+```
+logs_base_dir = "tensorboard/signatrix_efficientdet_coco"
+os.makedirs(logs_base_dir, exist_ok=True)
+%load_ext tensorboard
+%tensorboard --logdir {logs_base_dir}
+```
 Start the training 
 
 ```
