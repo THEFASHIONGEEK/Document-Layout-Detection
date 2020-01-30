@@ -15,7 +15,7 @@ Dataset has four classes:
 
 ### Format of Dataset
 
-![Format of Dataset](Images/VOC.png)
+![Format of Dataset](Images/VOC.PNG)
 
 ## Pipeline
 
@@ -26,7 +26,7 @@ cat requirements.txt | xargs -n 1 -L 1 pip install
 ```
 Convert to COCO format
 
-![COCO format](Images/COCO.png)
+![COCO format](Images/COCO.PNG)
 
 Load Dataset
 
