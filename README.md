@@ -62,7 +62,9 @@ Start the training
 ```
 gtf.Train(num_epochs=5, model_output_dir="trained/")
 ```
+## DEMO
 
+[Run this colab](https://colab.research.google.com/drive/1ta8zJb2Xub75j3MSq74oCE6YvYsDbc_f)
 
 
 ## Acknowledgments
